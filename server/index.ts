@@ -19,12 +19,13 @@ app.use(cors({
 
 // Routes
 app.use('/api/v1', productRouter);
+app.get('/health', (req, res) => {
+  res.send('OK');
+});
 
 // Error handling
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
-  console.log(err);
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
+  res.status(500).send('Internal Server Error');
 });
 
 app.listen(serverPort, () => {

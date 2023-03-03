@@ -9,7 +9,10 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
     domains: ['http2.mlstatic.com'],
-  }
+  },
+  env: {
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+  },
 }
 
 module.exports = nextConfig
