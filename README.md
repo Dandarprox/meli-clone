@@ -49,3 +49,5 @@ pnpm build
 pnpm start
 ```
 The client will be running on localhost port 3000.
+
+Access http://localhost:3000 to see the application.
