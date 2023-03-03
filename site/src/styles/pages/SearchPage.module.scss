@@ -1,0 +1,14 @@
+.searchbar {
+  margin: 0 100px 0 50px;
+}
+
+.product-container {
+  max-width: 1000px;
+  margin: 50px auto 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  
+  ol {
+    list-style-type: none;
+  }
+}

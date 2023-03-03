@@ -1,0 +1,62 @@
+$thumbnail-size: 210px;
+
+.root {
+  display: flex;
+  position: relative;
+}
+
+.thumbnail {
+  width: $thumbnail-size;
+  height: $thumbnail-size;
+  position: relative;
+  border-radius: var(--border-radius);
+}  
+
+.thumbnail,
+.title {
+  a {
+      text-decoration: none;
+      color: inherit;
+    }
+}
+
+.price {
+  font-size: 1.3rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.title {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  max-width: 37ch;
+}
+
+.divider {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 2px;
+  width: calc(100% - 50px);
+  opacity: 0.2;
+  transform: translateX(-50%);
+}
+
+.free-shipping {
+  padding: 5px;
+  font-size: 0.8rem;
+  background: var(--green);
+  color: var(--white);
+  margin: 0 7px;
+  border-radius: var(--border-radius);
+}
+
+.condition {
+  margin-top: 45px;
+}

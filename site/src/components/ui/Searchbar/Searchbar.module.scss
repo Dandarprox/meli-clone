@@ -1,0 +1,54 @@
+$border-radius: 2px;
+
+.root {
+    position: relative;
+    
+    &:focus-within {
+        outline: 1px solid var(--blue);
+    }
+}
+
+
+.input {
+    height: 60px;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 7px 60px 9px 15px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: $border-radius;
+    border: none;
+    height: 39px;
+    font-family: var(--font-figtree);
+    font-size: 0.9rem;
+    
+    &:focus {
+        outline: none;
+    }
+}
+
+.label {
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 100%;
+    width: 35px;
+    background: var(--foreground);
+    border: 0;
+    border-radius: 0 $border-radius $border-radius 0;
+    cursor: pointer;
+    
+    svg {
+        opacity: 0.6;
+    }
+}

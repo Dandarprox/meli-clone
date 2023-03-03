@@ -1,0 +1,4 @@
+server/node_modules/
+site/node_modules/
+.next/
+.env
